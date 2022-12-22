@@ -1,0 +1,196 @@
+/* 検索フォーム装飾 */
+.search__form {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.search__form-title{
+  text-align: center;
+  font-size: 24px;
+}
+
+.search__form-container {
+  border: 1px solid black;
+  padding: 50px;
+}
+
+.search__form-item {
+  line-height: 60px;
+}
+
+.search__form-item label {
+  font-weight: bold;
+  display: inline-block;
+  width: 120px;
+}
+
+.search__form-item label:nth-of-type(2) {
+  width: 50px;
+}
+
+.search__form-inputbox {
+  display: inline-block;
+  height: 30px;
+  width: 200px;
+  margin: 0 30px;
+} 
+
+.search__radio-btn {
+  opacity: 0;
+  width: 0;
+  margin: 0;
+}
+
+.search__radio-btn:checked+.search__radio-btn-dummy::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #333333;
+}
+
+.search__radio-btn-dummy {
+  position: relative;
+  top: 8px;
+  left: 0;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid gray;
+  margin-right: 10px;
+}
+
+.search__submit-btn {
+  text-decoration: none;
+  display: block;
+  margin: auto;
+  width: 120px;
+  height: 35px;
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.search__reset-btn-container {
+  text-align: center;
+}
+.search__reset-btn {
+  color: black;
+  font-size: 14px;
+}
+
+/* 検索結果表示の装飾 */
+.search__opinion-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.search__opinion-table th{
+  text-align: left;
+  padding:10px 20px;
+  border-bottom:1px solid black;
+}
+
+.search__opinion-table th:first-of-type {
+  width: 30px;
+}
+.search__opinion-table th:nth-of-type(2) {
+  width: 120px;
+}
+.search__opinion-table th:nth-of-type(3) {
+  width: 40px;
+}
+.search__opinion-table th:nth-of-type(4) {
+  width: 220px;
+}
+.search__opinion-table th:nth-of-type(5) {
+  width: 470px;
+}
+
+.search__opinion-table td {
+  text-align: left;
+  padding: 10px 20px;
+}
+
+.search__opinion-table button {
+  text-decoration: none;
+  width: 60px;
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+/* ご意見の装飾 */
+.mouseover-textchange {
+  position: relative;
+}
+
+.mouseover-textchange span {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.mouseover-textchange span:nth-child(2) {
+  opacity: 0;
+}
+
+.mouseover-textchange:hover span:nth-child(1) {
+  opacity: 0;
+}
+
+.mouseover-textchange:hover span:nth-child(2) {
+  opacity: 1;
+  background-color: white;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+/* ページネイトの装飾 */
+svg.w-5.h-5 {
+  /* paginateメソッドの矢印の大きさ調整のために追加 */
+  width: 25px;
+  height: 25px;
+  position: relative;
+  transform: translate( -10%, 33% );
+  padding: 6px;
+  /* border: 1px solid black; */
+  color: black;
+}
+
+.add-design {
+  /* border: 1px solid black; */
+  text-decoration: none;
+  color: black;  
+  display: inline-block;
+  text-align: center;
+  width: 20px;
+}
+
+.add-design-current {
+  /* border: 1px solid black; */
+  padding: 7px;
+  text-decoration: none;
+  background-color: black;
+  color: white;
+}
+
+.search__paginate {
+  display: flex;
+}
+
+.search__paginate {
+  justify-content: space-between;
+}
+/* table,tr,th,td {
+  border: 1px solid black;
+} */
+

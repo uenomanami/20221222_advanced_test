@@ -1,0 +1,21 @@
+.contact__table tr {
+  height: 80px;
+}
+
+.contact__table-check-opinion {
+  line-height: 100px;
+}
+
+.contact__table td {
+  width: 400px;
+  word-break: break-all;
+}
+
+.contact__back-btn {
+  margin-top: 10px;
+  border: none;
+  background-color: white;
+  text-decoration: underline;
+}
+
+
